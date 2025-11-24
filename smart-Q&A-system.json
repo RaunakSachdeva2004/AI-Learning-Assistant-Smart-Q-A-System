@@ -1,0 +1,56 @@
+{
+  "id": "1cc388a5-8832-46b5-af90-4b6f2b96be23",
+  "workspace_id": "7e3e6414-4bb3-4949-8178-4c2d73c66c65",
+  "user_id": "6923d3610cf6ac447fdf5746",
+  "dataset_id": null,
+  "name": "smart-Q&A-system",
+  "description": "🎨 Streamlit Interface\n    │\n    ▼\n🔗 LangChain Brain\n    │\n    ▼  \n🤖 Google PaLM LLM\n    │\n    ▼\n📚 Your Learning Materials\n    │\n    ▼\n💡 Intelligent Responses\n    │\n    ▼\n🎓 You Learn Faster!",
+  "images": [],
+  "input_schema": {
+    "title": "User inputs",
+    "description": "User inputs for the workflow",
+    "required": [],
+    "properties": {
+      "text": {
+        "type": "string",
+        "title": "Text",
+        "description": "This is a text field",
+        "ui_metadata": {
+          "type": "short_text",
+          "order": 0,
+          "value": "Hi",
+          "placeholder": ""
+        }
+      }
+    },
+    "type": "object"
+  },
+  "nodes": [
+    {
+      "title": "Generate text",
+      "node_type_name": "llm",
+      "name": "generate_text",
+      "description": "Use a large language model such as GPT",
+      "input_config": {
+        "human_message": "{{text}}",
+        "system_message": null,
+        "chat_history_id": null,
+        "model": "Google Gemini 2.0 Flash",
+        "temperature": 0.5
+      },
+      "output_mapping": null,
+      "connection": null
+    }
+  ],
+  "output_mapping": {},
+  "public_clone": true,
+  "public_runnable": true,
+  "num_likes": 0,
+  "num_runs": 0,
+  "num_views": 1,
+  "created_at": "2025-11-24T03:45:25.942631",
+  "updated_at": null,
+  "workflow_metadata": {
+    "image_url": null
+  }
+}
